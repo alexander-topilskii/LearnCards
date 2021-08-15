@@ -13,6 +13,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.talex.learncards.ui.theme.LearnCardsTheme
 
+
+@Preview
+@Composable
+fun PhotographerCardPreview() {
+    LearnCardsTheme {
+        PhotographerCard()
+    }
+}
+
 @Composable
 fun PhotographerCard() {
     Row {
@@ -29,13 +38,5 @@ fun PhotographerCard() {
                 Text("3 minutes ago", style = MaterialTheme.typography.body2)
             }
         }
-    }
-}
-
-@Preview
-@Composable
-fun PhotographerCardPreview() {
-    LearnCardsTheme {
-        PhotographerCard()
     }
 }

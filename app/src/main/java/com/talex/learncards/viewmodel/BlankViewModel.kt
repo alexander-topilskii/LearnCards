@@ -11,7 +11,7 @@ class BlankViewModel : BaseViewModel() {
 
     val dataLiveData = MutableLiveData<List<Message>>().also { liveData ->
         launch {
-            source.getFlowNumbers(250)
+            source.getFlowNumbers(1000)
                 .map(::toUiModel)
                 .into(liveData)
         }

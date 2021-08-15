@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.lifecycle.ViewModelProvider
 import com.talex.learncards.components.MakeUI
+import com.talex.learncards.components.other.DisplaySimpleList
 import com.talex.learncards.viewmodel.BlankViewModel
 
 class MainActivity : ComponentActivity() {
@@ -15,8 +16,14 @@ class MainActivity : ComponentActivity() {
         viewModel = ViewModelProvider(this).get(BlankViewModel::class.java)
 
         viewModel.dataLiveData.observe(this, {
-            setContent { MakeUI(it) }
+//            setContent {
+//                MakeUI(it)
+//            }
         })
+
+        setContent {
+            DisplaySimpleList()
+        }
     }
 }
 
