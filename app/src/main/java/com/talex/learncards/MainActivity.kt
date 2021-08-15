@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.lifecycle.ViewModelProvider
 import com.talex.learncards.components.MakeUI
+import com.talex.learncards.viewmodel.BlankViewModel
 
 class MainActivity : ComponentActivity() {
     private lateinit var viewModel: BlankViewModel
