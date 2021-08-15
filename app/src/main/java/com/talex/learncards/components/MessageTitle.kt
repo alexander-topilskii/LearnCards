@@ -5,7 +5,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.talex.learncards.Message
+import com.talex.learncards.viewmodel.Message
 
 
 @Composable
