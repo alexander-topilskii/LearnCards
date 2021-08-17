@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.talex.learncards.components.other.DisplaySimpleList
 import com.talex.learncards.viewmodel.BlankViewModel
 
-class MainActivity : ComponentActivity() {
+class SampleActivity : ComponentActivity() {
     private lateinit var viewModel: BlankViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {

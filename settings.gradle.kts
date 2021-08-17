@@ -3,9 +3,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "LearnCards"
-include ':app'
-include ':app:datasource'
+include(":app")
+include(":app:datasource")
+apply(from = "features/modules.gradle.kts")

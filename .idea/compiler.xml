@@ -3,6 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="LearnCards.app" target="11" />
+      <module name="LearnCards.features.main" target="11" />
+      <module name="LearnCards.features.MainPage" target="11" />
+      <module name="LearnCards.MainPage" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
