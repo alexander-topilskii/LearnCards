@@ -1,10 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">main</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_list">title_list</string>
     <string name="title_complex">title_complex</string>
     <string name="title_push">title_push</string>
     <string name="title_message">title_message</string>
-    <string name="action_message">action_message</string>
 </resources>

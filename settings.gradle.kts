@@ -9,3 +9,4 @@ rootProject.name = "LearnCards"
 include(":app")
 include(":app:datasource")
 apply(from = "features/modules.gradle.kts")
+include(":navigation")

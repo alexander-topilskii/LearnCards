@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/LearnCards/app/src/main/res/layout/activity_main.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/LearnCards/app/src/main/res/layout/blank_fragment.xml" value="0.259375" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/LearnCards/features/main/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/LearnCards/features/main_page/src/main/res/layout/blank_fragment.xml" value="0.14166666666666666" />
       </map>
     </option>
   </component>
