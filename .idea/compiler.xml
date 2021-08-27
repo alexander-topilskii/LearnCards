@@ -6,8 +6,10 @@
       <module name="LearnCards.features.main" target="11" />
       <module name="LearnCards.features.main_page" target="11" />
       <module name="LearnCards.features.MainPage" target="11" />
+      <module name="LearnCards.features.samples" target="11" />
       <module name="LearnCards.MainPage" target="11" />
       <module name="LearnCards.navigation" target="11" />
+      <module name="LearnCards.ui" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

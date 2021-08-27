@@ -1,9 +1,8 @@
-package com.talex.learncards.viewmodel
+package com.talex.samples
 
 import androidx.lifecycle.MutableLiveData
 import com.talex.datasource.Source
 import com.talex.datasource.messageBody
-import com.talex.samples.Message
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
@@ -12,7 +11,7 @@ class BlankViewModel : com.talex.ui.BaseViewModel() {
 
     val dataLiveData = MutableLiveData<List<Message>>().also { liveData ->
         launch {
-            source.getFlowNumbers(1000)
+            Source.getFlowNumbers(1000)
                 .map(::toUiModel)
                 .into(liveData)
         }
@@ -25,5 +24,3 @@ class BlankViewModel : com.talex.ui.BaseViewModel() {
         )
     }
 }
-
-

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnCards">
         <activity
-            android:name=".SampleActivity"
+            android:name="com.talex.samples.SampleActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
