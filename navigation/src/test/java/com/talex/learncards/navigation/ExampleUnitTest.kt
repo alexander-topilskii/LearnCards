@@ -1,4 +1,4 @@
-package com.talex.navigation
+package com.talex.learncards.navigation
 
 import org.junit.Test
 

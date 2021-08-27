@@ -1,4 +1,4 @@
-package com.talex.main.page
+package com.talex.learncards.pages
 
 import android.os.Parcelable
 import androidx.compose.foundation.clickable
@@ -19,10 +19,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
-import com.talex.main.R
-import com.talex.navigation.Router
-import com.talex.navigation.Screen
-import com.talex.navigation.navigate
+import com.talex.learncards.R
+import com.talex.learncards.Router
+import com.talex.learncards.Screen
+import com.talex.learncards.navigate
 import kotlinx.android.parcel.Parcelize
 import java.util.UUID
 

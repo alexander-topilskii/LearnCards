@@ -1,4 +1,4 @@
-package com.talex.main.page
+package com.talex.learncards.pages
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

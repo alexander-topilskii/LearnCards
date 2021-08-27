@@ -1,12 +1,10 @@
-package com.talex.main.page
+package com.talex.learncards.pages
 
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.Composable
-import com.talex.navigation.NavigationController
-import com.talex.navigation.Router
-import com.talex.navigation.Screen
+import com.talex.learncards.NavigationController
+import com.talex.learncards.Router
+import com.talex.learncards.Screen
 
-@ExperimentalAnimationApi
 @Composable
 fun ListContainer(
     externalRouter: Router

@@ -1,4 +1,4 @@
-package com.talex.navigation
+package com.talex.learncards
 
 import android.os.Bundle
 import androidx.compose.runtime.Composable

@@ -1,4 +1,4 @@
-package com.talex.main.page
+package com.talex.learncards.pages
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.BottomNavigation
@@ -10,8 +10,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.talex.navigation.Router
-import com.talex.navigation.Screen
+import com.talex.learncards.Router
+import com.talex.learncards.Screen
 
 @ExperimentalAnimationApi
 @Composable

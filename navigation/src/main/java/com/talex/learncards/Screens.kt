@@ -1,4 +1,6 @@
-package com.talex.navigation
+package com.talex.learncards
+
+import com.talex.learncards.navigation.R
 
 /**
  * This class described screen navigation objects

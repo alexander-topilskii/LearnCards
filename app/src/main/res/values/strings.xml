@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LearnCards</string>
+    <string name="title_list">title_list</string>
+    <string name="title_complex">title_complex</string>
+    <string name="title_push">title_push</string>
+    <string name="title_message">title_message</string>
+    <string name="action_message">action_message</string>
 </resources>
