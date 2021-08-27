@@ -7,9 +7,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.talex.learncards.components.MessageContent
-import com.talex.learncards.components.MessageImage
-import com.talex.learncards.components.MessageTitle
 import com.talex.learncards.viewmodel.Message
 
 

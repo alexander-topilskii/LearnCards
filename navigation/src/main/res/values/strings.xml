@@ -4,4 +4,6 @@
     <string name="title_complex">title_complex</string>
     <string name="title_push">title_push</string>
     <string name="title_message">title_message</string>
+    <string name="title_enter">Enter</string>
+    <string name="title_settings">Settings</string>
 </resources>

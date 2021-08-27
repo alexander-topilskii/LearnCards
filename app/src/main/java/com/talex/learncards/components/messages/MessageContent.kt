@@ -1,4 +1,4 @@
-package com.talex.learncards.components
+package com.talex.learncards.components.messages
 
 import android.content.res.Configuration
 import androidx.compose.animation.animateColorAsState

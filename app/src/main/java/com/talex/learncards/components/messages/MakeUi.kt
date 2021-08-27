@@ -3,7 +3,6 @@ package com.talex.learncards.components.messages
 import android.content.res.Configuration
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.talex.learncards.components.Conversation
 import com.talex.learncards.viewmodel.Message
 import com.talex.learncards.ui.theme.LearnCardsTheme
 
