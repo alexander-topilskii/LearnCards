@@ -11,8 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.talex.learncards.ui.theme.LearnCardsTheme
-import com.talex.learncards.pages.MainScreen
-import com.talex.learncards.pages.NewMessageScreen
+import com.talex.main_page.MainScreen
+import com.talex.main.page.NewMessageScreen
 
 class MainActivity : AppCompatActivity() {
     @ExperimentalAnimationApi

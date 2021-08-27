@@ -1,9 +1,10 @@
-package com.talex.learncards.pages
+package com.talex.main_page
 
 import androidx.compose.runtime.Composable
 import com.talex.learncards.NavigationController
 import com.talex.learncards.Router
 import com.talex.learncards.Screen
+import com.talex.main_page.UserScreen
 
 @Composable
 fun ListContainer(
