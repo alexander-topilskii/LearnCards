@@ -1,4 +1,4 @@
-package com.talex.learncards
+package com.talex.main.page
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -10,9 +10,10 @@ import androidx.compose.material.Text
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.talex.learncards.ui.theme.LearnCardsTheme
-import com.talex.main_page.MainScreen
-import com.talex.main.page.NewMessageScreen
+import com.talex.learncards.Screen
+import com.talex.learncards.createExternalRouter
+import com.talex.learncards.navigate
+import com.talex.ui.theme.LearnCardsTheme
 
 class MainActivity : AppCompatActivity() {
     @ExperimentalAnimationApi
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                             )
                         }
                         composable(Screen.NewMessage.screenName) {
-                            PresentModal { NewMessageScreen() }
+                            NewMessageScreen()
                         }
                     }
                 }

@@ -1,4 +1,4 @@
-package com.talex.main_page
+package com.talex.main.page
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.BottomNavigation

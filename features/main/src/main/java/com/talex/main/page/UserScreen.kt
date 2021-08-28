@@ -1,4 +1,4 @@
-package com.talex.main_page
+package com.talex.main.page
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

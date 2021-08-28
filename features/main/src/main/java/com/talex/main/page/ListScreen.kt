@@ -1,4 +1,4 @@
-package com.talex.main_page
+package com.talex.main.page
 
 import android.os.Parcelable
 import androidx.compose.foundation.clickable
@@ -22,6 +22,7 @@ import androidx.navigation.NavController
 import com.talex.learncards.Router
 import com.talex.learncards.Screen
 import com.talex.learncards.navigate
+import com.talex.main.R
 import kotlinx.android.parcel.Parcelize
 import java.util.UUID
 
@@ -30,7 +31,7 @@ data class UserModel(
     val userId: String = UUID.randomUUID().toString(),
     val username: String,
     val education: String? = null
-): Parcelable {
+) : Parcelable {
 
     companion object Keys {
         const val USER = "user"

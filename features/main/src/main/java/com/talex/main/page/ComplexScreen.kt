@@ -1,12 +1,12 @@
-package com.talex.main_page
+package com.talex.main.page
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
 @Composable
-fun PushScreen(
+fun ComplexScreen(
     navController: NavController
 ) {
-    Text("Push Screen")
+    Text("Complex Screen")
 }

@@ -1,4 +1,4 @@
-package com.talex.learncards.ui.theme
+package com.talex.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

@@ -5,13 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material.*
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
+import androidx.compose.runtime.Composable
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.talex.learncards.ui.theme.LearnCardsTheme
-import com.talex.learncards.ui.theme.Red
+import com.talex.ui.theme.LearnCardsTheme
 import com.talex.learncards.viewmodel.BlankViewModel
+import com.talex.ui.stateValue
 
 class EnterActivity : ComponentActivity() {
     private lateinit var viewModel: BlankViewModel
@@ -20,38 +21,41 @@ class EnterActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(BlankViewModel::class.java)
 
-        viewModel.dataLiveData.observe(this, {
-            setContent {
-                LearnCardsTheme {
-                    val bottomItems = listOf(MyScreen.Enter, MyScreen.Settings)
+        setContent {
+            LearnCardsTheme {
 
-                    Scaffold(
-                        bottomBar = {
-                            BottomNavigation {
-                                bottomItems.forEach { screen ->
-                                    BottomNavigationItem(
-                                        selected = false,
-                                        onClick = {
-                                            println("GGGG EnterActivity.onCreate ${getString(screen.titleResourceId)}")
-                                        },
-                                        label = { Text(stringResource(id = screen.titleResourceId)) },
-                                        icon = {
-                                            Icon(screen.icon, "${getString(screen.titleResourceId)}", tint = Color.White)
-                                        })
-                                }
-                            }
-                        }
-                    ) {
-                        Row {
-                            Button(onClick = {
-                                println("GGGG EnterActivity.onCreate")
-                            }) {
-                                Text("Button")
-                            }
-                        }
+                val navController = rememberNavController()
+
+                NavHost(navController = navController, startDestination = MyScreen.Enter.screenName) {
+                    composable(MyScreen.Enter.screenName) {
+                        EnterScreen(
+                            viewModel,
+                            router = createExternalRouter { screen, params ->
+                                navController.navigate(screen, params)
+                            },
+                        )
                     }
                 }
             }
-        })
+        }
+    }
+}
+
+@Composable
+fun EnterScreen(
+    viewModel: BlankViewModel,
+    router: Router
+) {
+
+    Scaffold(
+        bottomBar = { BottomNavigationUi(viewModel.mainScreenData.stateValue()) }
+    ) {
+        Row {
+            Button(onClick = {
+                println("GGGG EnterActivity.onCreate")
+            }) {
+                Text(viewModel.enterScreenState.stateValue())
+            }
+        }
     }
 }
