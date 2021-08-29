@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.talex.enter_page.EnterScreen
 import com.talex.ui.theme.LearnCardsTheme
 import com.talex.learncards.viewmodel.BlankViewModel
 import com.talex.ui.stateValue
@@ -25,36 +26,16 @@ class EnterActivity : ComponentActivity() {
             LearnCardsTheme {
 
                 val navController = rememberNavController()
-
+                val router = createExternalRouter { screen, params ->
+                    navController.navigate(screen, params)
+                }
                 NavHost(navController = navController, startDestination = MyScreen.Enter.screenName) {
                     composable(MyScreen.Enter.screenName) {
-                        EnterScreen(
-                            viewModel,
-                            router = createExternalRouter { screen, params ->
-                                navController.navigate(screen, params)
-                            },
-                        )
+
+
+                        EnterScreen(router)
                     }
                 }
-            }
-        }
-    }
-}
-
-@Composable
-fun EnterScreen(
-    viewModel: BlankViewModel,
-    router: Router
-) {
-
-    Scaffold(
-        bottomBar = { BottomNavigationUi(viewModel.mainScreenData.stateValue()) }
-    ) {
-        Row {
-            Button(onClick = {
-                println("GGGG EnterActivity.onCreate")
-            }) {
-                Text(viewModel.enterScreenState.stateValue())
             }
         }
     }
