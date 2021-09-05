@@ -8,6 +8,9 @@ dependencyResolutionManagement {
 rootProject.name = "LearnCards"
 include(":app")
 include(":app:datasource")
-apply(from = "features/modules.gradle.kts")
+
 include(":navigation")
 include(":ui")
+include(":appScopes")
+
+apply(from = "features/modules.gradle.kts")

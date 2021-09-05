@@ -10,7 +10,6 @@ import com.talex.learncards.BottomNavigationUi
 import com.talex.learncards.Router
 import com.talex.ui.stateValue
 
-
 @Composable
 fun EnterScreen(router: Router, enterViewModel: EnterViewModel = viewModel()) {
     enterViewModel.addEnterScreenRouter(router)

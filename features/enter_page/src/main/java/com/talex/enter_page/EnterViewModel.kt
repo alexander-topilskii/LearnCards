@@ -19,13 +19,11 @@ class EnterViewModel : BaseViewModel() {
         router?.routeTo(value[1].screenName)
     }
 
-    private val source: Source = Source
 
     private val _enterScreenState = MutableStateFlow("text")
     val enterScreenState = _enterScreenState.asStateFlow()
-    val value = listOf(MyScreen.Enter, MyScreen.Settings)
+    private val value = listOf(MyScreen.Enter, MyScreen.Settings)
     val mainScreenData = MutableStateFlow(value).asStateFlow()
-
 
     init {
         launch {

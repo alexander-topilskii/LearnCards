@@ -7,13 +7,12 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 class BlankViewModel : com.talex.ui.BaseViewModel() {
-    private val source: Source = Source
 
     val dataLiveData = MutableLiveData<List<Message>>().also { liveData ->
         launch {
-            Source.getFlowNumbers(1000)
-                .map(::toUiModel)
-                .into(liveData)
+//            Source.getFlowNumbers(1000)
+//                .map(::toUiModel)
+//                .into(liveData)
         }
     }
 
