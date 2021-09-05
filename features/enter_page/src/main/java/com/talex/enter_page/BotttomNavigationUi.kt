@@ -1,4 +1,4 @@
-package com.talex.learncards
+package com.talex.enter_page
 
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
@@ -7,6 +7,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import com.talex.learncards.MyScreen
 
 @Composable
 fun BottomNavigationUi(bottomItems: List<MyScreen>) {

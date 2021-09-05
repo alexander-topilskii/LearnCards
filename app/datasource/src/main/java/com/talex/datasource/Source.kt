@@ -5,8 +5,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.isActive
+import javax.inject.Inject
 
-class Source {
+class Source @Inject constructor() {
 
     fun getNumbers(count: Int = 100): List<Int> = (0..count).shuffled()
 

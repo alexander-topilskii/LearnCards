@@ -9,5 +9,6 @@ java {
 }
 
 dependencies {
+    implementation "javax.inject:javax.inject:$javaInjectVersion"
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1")
 }
