@@ -1,6 +1,9 @@
-package com.talex.enter_page
+package com.talex.settings
 
+import androidx.navigation.NavHostController
+import com.talex.datasource.Source
 import com.talex.learncards.MyScreen
+import com.talex.learncards.Router
 import com.talex.ui.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
@@ -10,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class EnterViewModel @Inject constructor() : BaseViewModel() {
+class SettingsViewModel @Inject constructor() : BaseViewModel() {
 
     private val _enterScreenState = MutableStateFlow("text")
     val enterScreenState = _enterScreenState.asStateFlow()
@@ -18,7 +21,6 @@ class EnterViewModel @Inject constructor() : BaseViewModel() {
     val mainScreenData = MutableStateFlow(value).asStateFlow()
 
     init {
-        println("GGGG EnterViewModel.init")
         launch {
             for (i in 0..20) {
                 delay(1000)

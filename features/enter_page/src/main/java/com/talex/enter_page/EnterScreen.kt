@@ -9,17 +9,12 @@ import com.talex.ui.stateValue
 
 @Composable
 fun EnterScreen(enterViewModel: EnterViewModel) {
+    Row {
+        Button(onClick = {
 
-    Scaffold(
-        bottomBar = { BottomNavigationUi(enterViewModel.mainScreenData.stateValue()) }
-    ) {
-        Row {
-            Button(onClick = {
-
-            }
-            ) {
-                Text(enterViewModel.enterScreenState.stateValue())
-            }
+        }
+        ) {
+            Text(enterViewModel.enterScreenState.stateValue())
         }
     }
 }

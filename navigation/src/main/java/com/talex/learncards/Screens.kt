@@ -2,7 +2,9 @@ package com.talex.learncards
 
 import android.graphics.drawable.Icon
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Menu
+import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material.icons.rounded.ThumbUp
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -23,6 +25,6 @@ sealed class Screen(val screenName: String, val titleResourceId: Int) {
 }
 
 sealed class MyScreen(val screenName: String, val titleResourceId: Int, val icon: ImageVector) {
-    object Enter : MyScreen("main", R.string.title_enter, Icons.Rounded.Menu)
-    object Settings : MyScreen("main", R.string.title_settings, Icons.Rounded.ThumbUp)
+    object Enter : MyScreen("enter", R.string.title_enter, Icons.Rounded.Home)
+    object Settings : MyScreen("settings", R.string.title_settings, Icons.Rounded.Settings)
 }

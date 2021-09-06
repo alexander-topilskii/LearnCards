@@ -45,7 +45,6 @@ android {
 dependencies {
     implementation(project(":navigation"))
     implementation(project(":ui"))
-    implementation(project(":appScopes"))
     implementation(project(":app:datasource"))
 
     //DI
