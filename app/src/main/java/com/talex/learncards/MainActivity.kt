@@ -3,7 +3,13 @@ package com.talex.learncards
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
@@ -23,7 +29,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             LearnCardsTheme {
-
                 val navController = rememberNavController()
                 val mainViewModel: MainViewModel = viewModel()
                 val router = createExternalRouter { screen, params ->
@@ -31,7 +36,7 @@ class MainActivity : ComponentActivity() {
                 }
 
                 Scaffold(
-                    bottomBar = { BottomNavigationUi(router, mainViewModel.mainScreenData.stateValue()) }
+                    bottomBar = { BottomNavigationUi(router) }
                 ) {
                     NavHost(navController = navController, startDestination = MyScreen.Enter.screenName) {
                         composable(MyScreen.Enter.screenName) {
